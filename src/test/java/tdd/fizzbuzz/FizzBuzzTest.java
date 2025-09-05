@@ -80,7 +80,7 @@ public class FizzBuzzTest {
   @Test
   void should_return_multiple_3_and_5_and_7_when_countOff_then_FizzBuzzWhizz(){
     //Given
-    int number = 35;
+    int number = 105;
     FizzBuzz fizzBuzz = new FizzBuzz();
     //when
     String result = fizzBuzz.create(number);
