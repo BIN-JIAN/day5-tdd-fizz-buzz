@@ -5,6 +5,7 @@ public class FizzBuzz {
   public final String FIZZ = "Fizz";
   public final String BUZZ = "Buzz";
   public final String FIZZBUZZ = "FizzBuzz";
+  public final String WHIZZ = "Whizz";
 
   public String create(int number) {
     if(number%3 == 0 && number%5 == 0){
@@ -13,7 +14,11 @@ public class FizzBuzz {
       return BUZZ;
     } else if (number%3 == 0){
       return FIZZ;
-    }else{
+
+    } else if (number%7 == 0) {
+      return WHIZZ;
+
+    } else{
       return String.valueOf(number);
     }
   }
