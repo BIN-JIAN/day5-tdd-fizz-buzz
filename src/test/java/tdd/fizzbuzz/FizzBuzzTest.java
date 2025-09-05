@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class FizzBuzzTest {
 
   @Test
-  void Should_return_normal_number_when_countOff_then_normal_number(){
+  void should_return_normal_number_when_countOff_then_normal_number(){
     //Given
     int number = 1;
     FizzBuzz fizzBuzz = new FizzBuzz();
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
   }
 
   @Test
-  void Should_return_multiple_3_when_countOff_then_Fizz(){
+  void should_return_multiple_3_when_countOff_then_Fizz(){
     //Given
     int number = 3;
     FizzBuzz fizzBuzz = new FizzBuzz();
@@ -28,7 +28,7 @@ public class FizzBuzzTest {
     assertEquals("Fizz",result);
   }
   @Test
-  void Should_return_multiple_5_when_countOff_then_Buzz(){
+  void should_return_multiple_5_when_countOff_then_Buzz(){
     //Given
     int number = 5;
     FizzBuzz fizzBuzz = new FizzBuzz();
@@ -38,7 +38,7 @@ public class FizzBuzzTest {
     assertEquals("Buzz",result);
   }
   @Test
-  void Should_return_common_multiple_3_and_5_when_countOff_then_FizzBuzz(){
+  void should_return_common_multiple_3_and_5_when_countOff_then_FizzBuzz(){
     //Given
     int number = 15;
     FizzBuzz fizzBuzz = new FizzBuzz();
@@ -48,7 +48,7 @@ public class FizzBuzzTest {
     assertEquals("FizzBuzz",result);
   }
   @Test
-  void Should_return__multiple_7_when_countOff_then_Whizz(){
+  void should_return__multiple_7_when_countOff_then_Whizz(){
     //Given
     int number = 7;
     FizzBuzz fizzBuzz = new FizzBuzz();
