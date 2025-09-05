@@ -77,5 +77,15 @@ public class FizzBuzzTest {
     //Then
     assertEquals("BuzzWhizz",result);
   }
+  @Test
+  void should_return_multiple_3_and_5_and_7_when_countOff_then_FizzBuzzWhizz(){
+    //Given
+    int number = 35;
+    FizzBuzz fizzBuzz = new FizzBuzz();
+    //when
+    String result = fizzBuzz.create(number);
+    //Then
+    assertEquals("FizzBuzzWhizz",result);
+  }
 
 }
