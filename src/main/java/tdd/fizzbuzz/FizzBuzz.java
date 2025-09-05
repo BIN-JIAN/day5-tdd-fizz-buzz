@@ -6,10 +6,15 @@ public class FizzBuzz {
   public final String BUZZ = "Buzz";
   public final String FIZZBUZZ = "FizzBuzz";
   public final String WHIZZ = "Whizz";
-
+  public final String FIZZWHIZZ = "FizzWhizz";
   public String create(int number) {
-    if(number%3 == 0 && number%5 == 0){
-      return  FIZZBUZZ;
+    boolean isMultipleOf3 = number % 3 == 0;
+    boolean isMultipleOf5 = number % 5 == 0;
+    boolean isMultipleOf7 = number % 7 == 0;
+    if(isMultipleOf3 && isMultipleOf5) {
+      return FIZZBUZZ;
+    } else if (isMultipleOf3 && isMultipleOf7 && !isMultipleOf5) {
+      return FIZZWHIZZ;
     }else if (number%5 == 0){
       return BUZZ;
     } else if (number%3 == 0){
@@ -17,7 +22,6 @@ public class FizzBuzz {
 
     } else if (number%7 == 0) {
       return WHIZZ;
-
     } else{
       return String.valueOf(number);
     }

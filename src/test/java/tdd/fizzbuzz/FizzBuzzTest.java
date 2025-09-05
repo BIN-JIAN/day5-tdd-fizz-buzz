@@ -58,7 +58,7 @@ public class FizzBuzzTest {
     assertEquals("Whizz",result);
   }
   @Test
-  void Should_return_multiple_3_and_7_when_countOff_then_FizzWhizz(){
+  void should_return_multiple_3_and_7_when_countOff_then_FizzWhizz(){
     //Given
     int number = 21;
     FizzBuzz fizzBuzz = new FizzBuzz();
